@@ -2,6 +2,7 @@ package com.swiftylions.SLStore.security;
 
 import com.swiftylions.SLStore.filter.JWTTokenValidatorFilter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -73,10 +74,13 @@ public class SLStoreSecurityConfig {
         return new HaveIBeenPwnedRestApiPasswordChecker();
     }
 
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList("http://localhost:5173")); //allow arrays of URLs which are Allowed to send Request for APIs
+        config.setAllowedOrigins(Arrays.asList(frontendUrl)); //allow arrays of URLs which are Allowed to send Request for APIs
         config.setAllowedMethods(Collections.singletonList("*")); // Allowed methods to work with back end like GET POST PUT etc.
         config.setAllowedHeaders(Collections.singletonList("*")); // only allow content-type headers
         config.setAllowCredentials(true);
