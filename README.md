@@ -61,7 +61,7 @@ The project follows a "Security-First" approach:
 ### Prerequisites
 - JDK 21
 - Maven 3.9+
-- MySQL 8.0+
+- MySQL 9.0+
 
 ### Installation
 1. **Clone the repository:**
