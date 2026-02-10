@@ -1,6 +1,4 @@
 # 🦁 SwiftyStore Back-end Application
-
-### Created by Hussein Khanjani (Swifty Lions)
 ---
 [![Java Version](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)](https://openjdk.org/projects/jdk/21/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
