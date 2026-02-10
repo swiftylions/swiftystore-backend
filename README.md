@@ -89,5 +89,4 @@ Once the server is running, you can access the interactive Swagger documentation
 
 ---
 
-## 👨‍💻 Author
-**SwiftyLions** - GitHub: [@swiftylions](https://github.com/swiftylions)  
+**Crafted with precision by the [SwiftyLions](https://github.com/swiftylions).**
